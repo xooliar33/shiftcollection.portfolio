@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIRTYE9X | Automotive Photography</title>
+    <style>
+        /* Base Styles & Typography */
+        :root {
+            --bg-color: #0f0f0f;
+            --text-color: #f4f4f4;
+            --accent-color: #d90429; /* Redline accent */
+            --card-bg: #1a1a1a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 6rem 2rem;
+            border-bottom: 2px solid var(--accent-color);
+            background: linear-gradient(to bottom, #000000, var(--bg-color));
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #888;
+            font-style: italic;
+            letter-spacing: 1px;
+        }
+
+        /* Gallery Grid */
+        .gallery-container {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        /* Image Cards */
+        .gallery-item {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(217, 4, 41, 0.2);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            opacity: 0.8;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem;
+            margin-top: 2rem;
+            border-top: 1px solid #333;
+            color: #666;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>DIRTYE9X</h1>
+        <p>For Those Who Drive — Not Just Own.</p>
+    </header>
+
+    <main class="gallery-container">
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1617531653332-bd46c24f2068?q=80&w=2115&auto=format&fit=crop" alt="BMW front fascia">
+            </div>
+            
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1555353540-64fd3b71c4f1?q=80&w=2070&auto=format&fit=crop" alt="Performance exhaust details">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=1964&auto=format&fit=crop" alt="Track day motion shot">
+            </div>
+
+             <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?q=80&w=2069&auto=format&fit=crop" alt="Chassis and wheels">
+            </div>
+            
+            </div>
+    </main>
+
+    <footer>
+        <p>EST 2019 | DIRTYE9X Automotive Photography</p>
+    </footer>
+
+</body>
+</html>
