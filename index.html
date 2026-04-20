@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Shift Collection</title>
+    <title>Shift Collections | Premium Vehicle Curation</title>
     <style>
         /* Base Styles & Typography */
         :root {
-            --bg-color: #FCFCFA; /* Very soft, warm off-white */
+            --bg-color: #FCFCFA; /* Soft off-white */
             --text-color: #222222;
-            --gold: #C5A059; /* Elegant, muted gold */
+            --gold: #C5A059; /* Elegant gold */
             --light-grey: #888888;
         }
 
@@ -26,32 +26,20 @@
             line-height: 1.6;
         }
 
-        /* Elegant Header */
+        /* Elegant Header with Logo */
         header {
             text-align: center;
-            padding: 8rem 2rem 5rem;
+            padding: 6rem 2rem 4rem;
         }
 
-        header h1 {
-            font-family: 'Georgia', 'Times New Roman', serif;
-            font-size: 3.5rem;
-            letter-spacing: 6px;
-            font-weight: normal;
-            text-transform: uppercase;
-            color: var(--text-color);
-            margin-bottom: 1rem;
-        }
-
-        /* The Gold Accent */
-        header h1 span {
-            color: var(--gold);
-        }
-
-        header p {
-            font-size: 0.85rem;
-            color: var(--light-grey);
-            letter-spacing: 4px;
-            text-transform: uppercase;
+        .site-logo {
+            max-width: 350px; /* Adjust this number to make the logo bigger or smaller */
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 4px; /* Optional: slightly rounds the sharp corners of the image */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Adds a soft drop shadow */
         }
 
         .gold-divider {
@@ -61,92 +49,15 @@
             margin: 2rem auto;
         }
 
+        header p {
+            font-size: 0.85rem;
+            color: var(--light-grey);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
         /* Minimalist Gallery Grid */
         .gallery-container {
             max-width: 1400px;
             margin: 0 auto 6rem;
             padding: 0 2rem;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 4rem; /* Lots of space between photos for a clean look */
-        }
-
-        .gallery-item {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: auto;
-            display: block;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03); /* Very soft shadow */
-            transition: transform 0.6s ease, opacity 0.6s ease;
-        }
-
-        .gallery-item:hover img {
-            transform: scale(1.03); /* Gentle zoom on hover */
-            opacity: 0.9;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 4rem 2rem;
-            color: var(--light-grey);
-            font-size: 0.8rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            border-top: 1px solid rgba(197, 160, 89, 0.2); /* Faint gold border */
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-                letter-spacing: 4px;
-            }
-            .gallery {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <h1>The Shift <span>Collection</span></h1>
-        <div class="gold-divider"></div>
-        <p>Automotive Photography</p>
-    </header>
-
-    <main class="gallery-container">
-        <div class="gallery">
-            <div class="gallery-item">
-                <img src="your-photo-1.jpg" alt="Automotive capture 1">
-            </div>
-            
-            <div class="gallery-item">
-                <img src="your-photo-2.jpg" alt="Automotive capture 2">
-            </div>
-
-            <div class="gallery-item">
-                <img src="your-photo-3.jpg" alt="Automotive capture 3">
-            </div>
-
-             <div class="gallery-item">
-                <img src="your-photo-4.jpg" alt="Automotive capture 4">
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; The Shift Collection</p>
-    </footer>
-
-</body>
-</html>
